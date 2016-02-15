@@ -152,12 +152,36 @@ class SparkServiceProvider extends ServiceProvider
         //             'Feature 3',
         //         ]);
 
-        // Spark::plan('Basic', 'stripe-id')->price(10)
-        //         ->trialDays(7)
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+        Spark::plan('Basic Plan', 'Basic')->price(5)
+            ->trialDays(7)
+            ->features([
+                'Feature 1',
+                'Feature 2',
+                'Feature 3',
+            ]);
+
+        Spark::plan('Starter Plan', 'Starter')->price(10)
+            ->trialDays(7)
+            ->features([
+                'Feature 1',
+                'Feature 2',
+                'Feature 3',
+            ]);
+
+        Spark::plan('Bussines Plan', 'Bussines')->price(15)
+            ->trialDays(7)
+            ->features([
+                'Feature 1',
+                'Feature 2',
+                'Feature 3',
+            ]);
+
+        Spark::plan('Ultimate Plan', 'Ultimate')->price(20)
+            ->trialDays(7)
+            ->features([
+                'Feature 1',
+                'Feature 2',
+                'Feature 3',
+            ]);
     }
 }
